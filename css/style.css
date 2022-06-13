@@ -1,0 +1,160 @@
+@media print {
+    body{
+        background-color: #fff;
+        padding: 90px;
+    }
+
+    section::before{
+        display: none;
+    }
+
+    #about,.heading.tm-content-box,.tm-sidebar,.blocks,#ideas,.img-contact-us,#contact{
+        display: none;
+    }
+
+    .tm-content-box {
+        padding: 0;
+        margin: 0;
+    }
+
+    .flex-2-col {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .flex-item img{
+        width: 250px;
+        height: 160px;
+    }
+    
+    h2.tm-section-title {
+        color: blue;
+    }
+    
+    .tm-footer {
+        margin: 0;
+        padding: 0;
+    }
+} 
+
+.tm-nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+.flex-2-col {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex-item p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+
+p:first-of-type{
+    font-style: italic;
+}
+
+p.tm-banner-text {
+    font-style: unset;
+}
+
+.blocks p::first-letter {
+    color: #656369;
+}
+
+.box-bg:hover {
+    background-color: #87CEFA;
+}
+
+h2.tm-section-title.tm-section-title-box.tm-box-bg-title:hover {
+    color:white;
+}
+
+section, nav, #home {
+    box-shadow: 0 0 8px 0 gray;
+    position: relative;
+}
+
+section::before{
+    content:"\A";
+    border-style: solid;
+    border-width: 30px 250px 0 0;
+    border-color: #59c0f7 transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+.padding-medium a {
+    color: black;
+}
+
+.heading h2{
+    text-align: center;
+    color: #87CEFA;
+}
+
+.padding-medium a:hover {
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: #87CEFA;
+}
+
+.text::after {
+    content: 'New';
+    vertical-align: super;
+    color: red;
+    font-size: 12px;
+}
+
+/* p.tm-section-description{
+    color: black;
+} */
+
+.box-work {
+    padding: 10px;
+}
+
+.box-work:nth-child(2n) {
+    background-color: #f2f2f2
+}
+
+.mandatory-field:after {
+    content:" *";
+    color: red;
+}
+
+.btn {
+    width: 170px;
+    height: 60px;
+    background-color: white;
+    border-color:#87CEFA;
+    color: #87CEFA;
+    float: right;
+}
+
+.btn:hover {
+    background-color:#87CEFA;
+    color: white;
+    border-color:#87CEFA;
+}
+
+.tm-footer p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+    margin-left: 25px;
+}
+
